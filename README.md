@@ -1,8 +1,8 @@
 # EDU
 
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
-[![style: very good analysis](https://tinyurl.com/bloc-library)](https://github.com/felangel/bloc)
 <a href="https://github.com/Solido/awesome-flutter#standard"><img src="https://img.shields.io/badge/awesome-flutter-blue.svg?longCache=true" alt="Awesome Flutter"></a>
+[![style: very good analysis](https://tinyurl.com/bloc-library)](https://github.com/felangel/bloc)
 <!-- <a href="https://github.com/felangel/bloc"><img src="https://tinyurl.com/bloc-library" alt="Bloc Library"></a> -->
 
 
