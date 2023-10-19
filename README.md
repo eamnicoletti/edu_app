@@ -6,7 +6,7 @@
 <!-- <a href="https://github.com/felangel/bloc"><img src="https://tinyurl.com/bloc-library" alt="Bloc Library"></a> -->
 
 
-EDU is an educational app sample. A case study of a Flutter Clean Architecture project, with BLoC and covered by TDD (Test Driven Development).
+Edu is an educational app sample. A case study of a Flutter Clean Architecture project, with BLoC and covered by TDD (Test Driven Development).
 
 
 ## Main features
