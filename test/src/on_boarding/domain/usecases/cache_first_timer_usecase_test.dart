@@ -20,14 +20,17 @@ void main() {
     'should call the [OnBoardingRepo.cacheFirstTimer] '
     'and return the right data',
     () async {
+      // arrange
       when(() => repo.cacheFirstTimer()).thenAnswer(
         (_) async => Left(
           ServerFailure(message: 'Unknown Error Occurred', statusCode: 500),
         ),
       );
 
+      // act
       final result = await usecase();
 
+      // assert
       expect(
         result,
         equals(
@@ -36,7 +39,6 @@ void main() {
           ),
         ),
       );
-
       verify(() => repo.cacheFirstTimer()).called(1);
       verifyNoMoreInteractions(repo);
     },
