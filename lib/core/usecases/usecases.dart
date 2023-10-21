@@ -1,13 +1,13 @@
 import 'package:edu_app/core/utils/typedfs.dart';
 
 abstract class UsecaseWithParams<Type, Params> {
-  UsecaseWithParams();
+  const UsecaseWithParams();
 
   ResultFuture<Type> call(Params params);
 }
 
 abstract class UsecaseWithoutParams<Type> {
-  UsecaseWithoutParams();
+  const UsecaseWithoutParams();
 
   ResultFuture<Type> call();
 }
