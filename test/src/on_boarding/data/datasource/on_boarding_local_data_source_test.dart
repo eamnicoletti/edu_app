@@ -44,5 +44,48 @@ void main() {
     });
   });
 
-  group('checkIfUserIsFirstTimer', () {});
+  group('checkIfUserIsFirstTimer', () {
+    test(
+        'should call [SharedPreferences] to check if user is first timer and '
+        'return the right response from storage when data exists', () async {
+      // arrange
+      when(() => prefs.getBool(any())).thenReturn(false);
+
+      // act
+      final result = await localDataSource.checkIfUserIsFirstTimer();
+
+      // assert
+      expect(result, false);
+      verify(() => prefs.getBool(kFirstTimerKey));
+      verifyNoMoreInteractions(prefs);
+    });
+
+    test('should return true if there is no data in storage', () async {
+      // arrange
+      when(() => prefs.getBool(any())).thenReturn(null);
+
+      // act
+      final result = await localDataSource.checkIfUserIsFirstTimer();
+
+      // assert
+      expect(result, true);
+      verify(() => prefs.getBool(kFirstTimerKey)).called(1);
+      verifyNoMoreInteractions(prefs);
+    });
+
+    test(
+        'should throw a [CacheException] when is an error '
+        'retrieving the data', () async {
+      // arrange
+      when(() => prefs.getBool(any())).thenThrow(Exception());
+
+      // act
+      final call = localDataSource.checkIfUserIsFirstTimer();
+
+      // assert
+      expect(call, throwsA(isA<CacheException>()));
+      verify(() => prefs.getBool(kFirstTimerKey)).called(1);
+      verifyNoMoreInteractions(prefs);
+    });
+  });
 }
