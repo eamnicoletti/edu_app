@@ -29,8 +29,8 @@ void main() {
     });
 
     test(
-        'should throw a [CacheException] when there is an error caching the data',
-        () async {
+        'should throw a [CacheException] when there is an error caching '
+        'the data', () async {
       // arrange
       when(() => prefs.setBool(any(), any())).thenThrow(Exception());
 
