@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:edu_app/src/auth/domain/entities/user_entity.dart';
-import 'package:edu_app/src/auth/domain/usecases/sign_in_usecase.dart';
+import 'package:edu_app/src/auth/domain/usecases/sign_up_usecase.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
@@ -8,14 +8,15 @@ import 'auth_repo.mock.dart';
 
 void main() {
   late MockAuthRepo repo;
-  late SignInUsecase usecase;
+  late SignUpUsecase usecase;
 
   const tEmail = 'Test email';
   const tPassword = 'Test password';
+  const tFullName = 'Test fullName';
 
   setUp(() {
     repo = MockAuthRepo();
-    usecase = SignInUsecase(repo);
+    usecase = SignUpUsecase(repo);
   });
 
   const tUser = UserEntity.empty();
@@ -23,23 +24,31 @@ void main() {
   test('should return [UserEntity] from the [AuthRepo]', () async {
     // arrange
     when(
-      () => repo.signIn(
+      () => repo.signUp(
         email: any(named: 'email'),
+        fullName: any(named: 'fullName'),
         password: any(named: 'password'),
       ),
     ).thenAnswer((_) async => const Right(tUser));
 
     // act
     final result = await usecase(
-      const SignInParams(
+      const SignUpParams(
         email: tEmail,
         password: tPassword,
+        fullName: tFullName,
       ),
     );
 
     // assert
     expect(result, const Right<dynamic, UserEntity>(tUser));
-    verify(() => repo.signIn(email: tEmail, password: tPassword)).called(1);
+    verify(
+      () => repo.signUp(
+        email: tEmail,
+        password: tPassword,
+        fullName: tFullName,
+      ),
+    ).called(1);
     verifyNoMoreInteractions(repo);
   });
 }
