@@ -2,7 +2,9 @@ import 'package:edu_app/core/extensions/context_extension.dart';
 import 'package:edu_app/core/res/colours.dart';
 import 'package:edu_app/core/res/fonts.dart';
 import 'package:edu_app/src/on_boarding/domain/entities/page_content_entity.dart';
+import 'package:edu_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class OnBoardingBody extends StatelessWidget {
   const OnBoardingBody({required this.pageContent, super.key});
@@ -45,10 +47,8 @@ class OnBoardingBody extends StatelessWidget {
                   backgroundColor: Colours.primaryColour,
                   foregroundColor: Colors.white,
                 ),
-                onPressed: () async {
-                  // TODO(get-Started): implement this functionality
-                  // cache user
-                  // push them to the appropriate screen
+                onPressed: () {
+                  context.read<OnBoardingCubit>().cacheFirstTimer();
                 },
                 child: const Text(
                   'Get Started',
