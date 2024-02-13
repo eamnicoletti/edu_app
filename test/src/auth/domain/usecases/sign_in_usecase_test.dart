@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:edu_app/src/auth/domain/entities/user_entity.dart';
+import 'package:edu_app/src/auth/domain/entities/local_user_entity.dart';
 import 'package:edu_app/src/auth/domain/usecases/sign_in_usecase.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
@@ -18,9 +18,9 @@ void main() {
     usecase = SignInUsecase(repo);
   });
 
-  const tUser = UserEntity.empty();
+  const tUser = LocalUserEntity.empty();
 
-  test('should return [UserEntity] from the [AuthRepo]', () async {
+  test('should return [LocalUserEntity] from the [AuthRepo]', () async {
     // arrange
     when(
       () => repo.signIn(
@@ -38,7 +38,7 @@ void main() {
     );
 
     // assert
-    expect(result, const Right<dynamic, UserEntity>(tUser));
+    expect(result, const Right<dynamic, LocalUserEntity>(tUser));
     verify(() => repo.signIn(email: tEmail, password: tPassword)).called(1);
     verifyNoMoreInteractions(repo);
   });
