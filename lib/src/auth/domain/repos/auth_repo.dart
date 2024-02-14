@@ -12,7 +12,7 @@ abstract class AuthRepo {
     required String password,
   });
 
-  ResultFuture<LocalUserEntity> signUp({
+  ResultFuture<void> signUp({
     required String email,
     required String fullName,
     required String password,
@@ -20,6 +20,6 @@ abstract class AuthRepo {
 
   ResultFuture<void> updateUser({
     required UpdateUserAction action,
-    dynamic userData,
+    required dynamic userData,
   });
 }
