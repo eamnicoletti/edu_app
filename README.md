@@ -21,7 +21,6 @@ Edu is an educational app sample. A case study of a Flutter Clean Architecture p
     - [ ] Sign In With Google Credentials
     - [ ] Sign In With Apple Credentials
     - [ ] Sign In With Facebook Credentials
-    - [ ] Sign In With Facebook Credentials
 2. [x] View course
     - [ ] Dashboard
 3. [ ] Join group chat
