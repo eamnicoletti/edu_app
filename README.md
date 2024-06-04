@@ -1,8 +1,9 @@
 # EDU
 
-[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
-<a href="https://github.com/Solido/awesome-flutter#standard"><img src="https://img.shields.io/badge/awesome-flutter-blue.svg?longCache=true" alt="Awesome Flutter"></a>
-[![style: very good analysis](https://tinyurl.com/bloc-library)](https://github.com/felangel/bloc)
+[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_badge_link]
+[![style: Awesome Flutter][awesome_flutter_badge]][awesome_flutter_badge_link]
+[![Conventional Commits][conventional_commits_badge]][conventional_commits_badge_link]
+[![Bloc Library][bloc_library_badge]][bloc_library_badge_link]
 <!-- <a href="https://github.com/felangel/bloc"><img src="https://tinyurl.com/bloc-library" alt="Bloc Library"></a> -->
 
 
@@ -37,3 +38,12 @@ Edu is an educational app sample. A case study of a Flutter Clean Architecture p
 2. data layer
 3. presentation layer
 4. TDD
+
+[awesome_flutter_badge]: https://img.shields.io/badge/awesome-flutter-blue.svg?longCache=true
+[awesome_flutter_badge_link]: https://github.com/Solido/awesome-flutter#standard
+[bloc_library_badge]: https://tinyurl.com/bloc-library
+[bloc_library_badge_link]: https://github.com/felangel/bloc
+[conventional_commits_badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
+[conventional_commits_badge_link]: https://conventionalcommits.org
+[very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
+[very_good_analysis_badge_link]: https://pub.dev/packages/very_good_analysis
