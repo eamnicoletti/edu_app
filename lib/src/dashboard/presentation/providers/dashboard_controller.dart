@@ -1,5 +1,6 @@
 import 'package:edu_app/core/common/app/providers/tab_navigator.dart';
 import 'package:edu_app/core/common/views/persistent_view.dart';
+import 'package:edu_app/src/profile/presentation/views/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -9,7 +10,39 @@ class DashboardController extends ChangeNotifier {
   final List<Widget> _screens = [
     ChangeNotifierProvider(
       create: (_) => TabNavigator(
-        TabItem(child: const Placeholder()),
+        TabItem(
+          child: const Center(
+            child: Text('Home'),
+          ),
+        ),
+      ),
+      child: const PersistentView(),
+    ),
+    ChangeNotifierProvider(
+      create: (_) => TabNavigator(
+        TabItem(
+          child: const Center(
+            child: Text('Materials'),
+          ),
+        ),
+      ),
+      child: const PersistentView(),
+    ),
+    ChangeNotifierProvider(
+      create: (_) => TabNavigator(
+        TabItem(
+          child: const Center(
+            child: Text('Chat'),
+          ),
+        ),
+      ),
+      child: const PersistentView(),
+    ),
+    ChangeNotifierProvider(
+      create: (_) => TabNavigator(
+        TabItem(
+          child: const ProfileView(),
+        ),
       ),
       child: const PersistentView(),
     ),
