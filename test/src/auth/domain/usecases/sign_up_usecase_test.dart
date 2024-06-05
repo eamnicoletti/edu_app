@@ -29,7 +29,7 @@ void main() {
         fullName: any(named: 'fullName'),
         password: any(named: 'password'),
       ),
-    ).thenAnswer((_) async => const Right(tUser));
+    ).thenAnswer((_) async => const Right(null));
 
     // act
     final result = await usecase(

@@ -36,8 +36,8 @@ void main() {
     });
 
     test(
-        'should return [CacheFailure] when call to local source is unsuccessful',
-        () async {
+        'should return [CacheFailure] when call to local source is '
+        'unsuccessful', () async {
       // arrange
       when(() => localDataSource.cacheFirstTimer()).thenThrow(
         const CacheException(message: 'Insufficient storage'),
