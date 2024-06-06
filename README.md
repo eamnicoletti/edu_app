@@ -21,18 +21,21 @@ Edu is an educational app sample. A case study of a Flutter Clean Architecture p
     - [ ] Sign In With Google Credentials
     - [ ] Sign In With Apple Credentials
     - [ ] Sign In With Facebook Credentials
-2. [x] View course
-    - [ ] Dashboard
+2. [ ] View course
 3. [ ] Join group chat
 4. [ ] Auto create group chat
 5. [ ] Leave group chat
 6. [ ] Upload video from admin section
 7. [ ] Play video from local storage
-8. [ ] Profile center (create, delete, update with image)
+8. [x] Profile center
+    [x] create
+    [x] update with image
+    [ ] delete
 9. [ ] Receive notification 
 10. [ ] Clear notification
 11. [x] Onboarding screen
 12. [x] Firebase integration 
+    - [x] Cloud Firestore
     - [x] Firebase Auth
     - [x] Firebase Core
     - [x] Firebase Storage
@@ -44,6 +47,7 @@ Edu is an educational app sample. A case study of a Flutter Clean Architecture p
 17. [ ] Ladder board acitivity 
 18. [ ] Upload video youtube
 19. [ ] Cloud functions 
+20. [x] Custom and nested navigation
 
 ## Architecture features
 

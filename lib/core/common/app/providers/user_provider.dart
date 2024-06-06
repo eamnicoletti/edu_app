@@ -14,7 +14,7 @@ class UserProvider extends ChangeNotifier {
     if (_user != user) {
       _user = user;
 
-      Future.delayed(Duration.zero, () => notifyListeners);
+      Future.delayed(Duration.zero, notifyListeners);
     }
   }
 }
