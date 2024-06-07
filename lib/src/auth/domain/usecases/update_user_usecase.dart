@@ -1,6 +1,6 @@
 import 'package:edu_app/core/enums/update_user.dart';
 import 'package:edu_app/core/usecases/usecases.dart';
-import 'package:edu_app/core/utils/typedfs.dart';
+import 'package:edu_app/core/utils/typedefs.dart';
 import 'package:edu_app/src/auth/domain/repos/auth_repo.dart';
 import 'package:equatable/equatable.dart';
 

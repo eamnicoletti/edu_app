@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:edu_app/core/utils/typedfs.dart';
+import 'package:edu_app/core/utils/typedefs.dart';
 import 'package:edu_app/src/course/domain/entities/course_entity.dart';
 
 /// The `CourseModel` class extends the `Course` entity and represents a

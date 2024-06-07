@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:edu_app/core/errors/exceptions.dart';
 import 'package:edu_app/core/errors/failures.dart';
-import 'package:edu_app/core/utils/typedfs.dart';
+import 'package:edu_app/core/utils/typedefs.dart';
 import 'package:edu_app/src/on_boarding/data/datasource/on_boarding_local_data_source.dart';
 import 'package:edu_app/src/on_boarding/domain/repos/on_boarding_repository.dart';
 

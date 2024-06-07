@@ -1,4 +1,4 @@
-import 'package:edu_app/core/utils/typedfs.dart';
+import 'package:edu_app/core/utils/typedefs.dart';
 
 abstract class OnBoardingRepo {
   const OnBoardingRepo();

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:edu_app/core/utils/typedfs.dart';
+import 'package:edu_app/core/utils/typedefs.dart';
 import 'package:edu_app/src/auth/data/models/user_model.dart';
 import 'package:edu_app/src/auth/domain/entities/local_user_entity.dart';
 import 'package:flutter_test/flutter_test.dart';

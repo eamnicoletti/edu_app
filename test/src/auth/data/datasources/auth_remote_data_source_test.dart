@@ -5,7 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:edu_app/core/enums/update_user.dart';
 import 'package:edu_app/core/errors/exceptions.dart';
 import 'package:edu_app/core/utils/constants.dart';
-import 'package:edu_app/core/utils/typedfs.dart';
+import 'package:edu_app/core/utils/typedefs.dart';
 import 'package:edu_app/src/auth/data/datasources/auth_remote_data_source.dart';
 import 'package:edu_app/src/auth/data/models/user_model.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
