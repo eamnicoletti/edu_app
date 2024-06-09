@@ -1,8 +1,14 @@
 import 'package:edu_app/core/common/app/providers/user_provider.dart';
+import 'package:edu_app/core/extensions/context_extension.dart';
 import 'package:edu_app/core/res/colours.dart';
 import 'package:edu_app/core/res/media_res.dart';
+import 'package:edu_app/core/services/injection_container.dart';
+import 'package:edu_app/src/course/presentation/cubit/course_cubit.dart';
+import 'package:edu_app/src/course/presentation/widgets/add_course_sheet.dart';
+import 'package:edu_app/src/profile/presentation/widgets/admin_button.dart';
 import 'package:edu_app/src/profile/presentation/widgets/user_info_card.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';
 
@@ -103,50 +109,49 @@ class ProfileBody extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 30),
-            // if (context.currentUser!.isAdmin) ...[
-            //   AdminButton(
-            //     label: 'Add Course',
-            //     icon: Icons.newspaper,
-            //     onPressed: () {
-            //       showModalBottomSheet<void>(
-            //         context: context,
-            //         backgroundColor: Colors.white,
-            //         isScrollControlled: true,
-            //         showDragHandle: true,
-            //         elevation: 0,
-            //         useSafeArea: true,
-            //         builder: (_) => MultiBlocProvider(
-            //           providers: [
-            //             BlocProvider(create: (_) => sl<CourseCubit>()),
-            //             BlocProvider(create: (_) => sl<NotificationCubit>()),
-            //           ],
-            //           child: const AddCourseSheet(),
-            //         ),
-            //       );
-            //     },
-            //   ),
-            //   AdminButton(
-            //     label: 'Add Video',
-            //     icon: IconlyLight.video,
-            //     onPressed: () {
-            //       Navigator.pushNamed(context, AddVideoView.routeName);
-            //     },
-            //   ),
-            //   AdminButton(
-            //     label: 'Add Materials',
-            //     icon: IconlyLight.paper_download,
-            //     onPressed: () {
-            //       Navigator.pushNamed(context, AddMaterialsView.routeName);
-            //     },
-            //   ),
-            //   AdminButton(
-            //     label: 'Add Exam',
-            //     icon: IconlyLight.document,
-            //     onPressed: () {
-            //       Navigator.pushNamed(context, AddExamView.routeName);
-            //     },
-            //   ),
-            // ],
+            if (context.currentUser!.isAdmin) ...[
+              AdminButton(
+                label: 'Add Course',
+                icon: IconlyLight.paper_plus,
+                onPressed: () {
+                  showModalBottomSheet<void>(
+                    context: context,
+                    backgroundColor: Colors.white,
+                    isScrollControlled: true,
+                    showDragHandle: true,
+                    elevation: 0,
+                    useSafeArea: true,
+                    builder: (_) => BlocProvider(
+                      create: (_) => sl<CourseCubit>(),
+                      // BlocProvider(create: (_) => sl<NotificationCubit>()),
+
+                      child: const AddCourseSheet(),
+                    ),
+                  );
+                },
+              ),
+              // AdminButton(
+              //   label: 'Add Video',
+              //   icon: IconlyLight.video,
+              //   onPressed: () {
+              //     Navigator.pushNamed(context, AddVideoView.routeName);
+              //   },
+              // ),
+              // AdminButton(
+              //   label: 'Add Materials',
+              //   icon: IconlyLight.paper_download,
+              //   onPressed: () {
+              //     Navigator.pushNamed(context, AddMaterialsView.routeName);
+              //   },
+              // ),
+              // AdminButton(
+              //   label: 'Add Exam',
+              //   icon: IconlyLight.document,
+              //   onPressed: () {
+              //     Navigator.pushNamed(context, AddExamView.routeName);
+              //   },
+              // ),
+            ],
           ],
         );
       },
