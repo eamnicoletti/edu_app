@@ -55,6 +55,13 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         (_) => const Dashboard(),
         settings: settings,
       );
+    case CourseDetailsScreen.routeName:
+      return _pageBuilder(
+        (_) => CourseDetailsScreen(
+          course: settings.arguments! as CourseEntity,
+        ),
+        settings: settings,
+      );
     case '/forgot-password':
       return _pageBuilder(
         (_) => const fbui.ForgotPasswordScreen(),
