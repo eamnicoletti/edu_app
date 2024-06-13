@@ -10,7 +10,7 @@
 Edu is an educational app sample. A case study of a Flutter Clean Architecture project, with BLoC and covered by TDD (Test Driven Development).
 
 
-## Main features
+## ✨ Main features
 
  
 1. [x] Social login
@@ -49,13 +49,37 @@ Edu is an educational app sample. A case study of a Flutter Clean Architecture p
 19. [ ] Cloud functions 
 20. [x] Custom and nested navigation
 
-## Architecture features
+
+## 🧱 Architecture features
+
 
 1. domain layer
 2. data layer
 3. presentation layer
 4. TDD
 5. Design Patterns
+
+
+## 📸 Previews
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_01.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_02.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_03.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_04.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_05.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_06.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_07.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_09.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_10.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_11.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_12.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_13.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_14.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_15.png"  width="200" height="400"/>
+  <img src="https://raw.githubusercontent.com/eamnicoletti/edu_app/main/previews/flutter_16.png"  width="200" height="400"/>
+</p>
 
 [awesome_flutter_badge]: https://img.shields.io/badge/awesome-flutter-blue.svg?longCache=true
 [awesome_flutter_badge_link]: https://github.com/Solido/awesome-flutter#standard
