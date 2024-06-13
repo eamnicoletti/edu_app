@@ -21,16 +21,16 @@ Edu is an educational app sample. A case study of a Flutter Clean Architecture p
     - [ ] Sign In With Google Credentials
     - [ ] Sign In With Apple Credentials
     - [ ] Sign In With Facebook Credentials
-2. [ ] View course
+2. [X] View course
 3. [ ] Join group chat
 4. [ ] Auto create group chat
 5. [ ] Leave group chat
 6. [ ] Upload video from admin section
 7. [ ] Play video from local storage
 8. [x] Profile center
-    [x] create
-    [x] update with image
-    [ ] delete
+    - [X] create
+    - [X] update with image
+    - [ ] delete
 9. [ ] Receive notification 
 10. [ ] Clear notification
 11. [x] Onboarding screen
